@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="text-gray-600 font-main">
+    <!-- main container -->
+    <div class="grid md:grid-cols-3">
+      <!-- navigation bar -->
+      <nav class="md:flex md:items-end flex-col md:text-right">
+        <div
+          class="flex flex-row justify-between items-center border-b border-gray-100"
+        >
+          <h1 class="font-bold uppercase p-5">
+            <a href="/">Blah food</a>
+          </h1>
+          <div class="p-4 cursor-pointer md:hidden" id="burger">
+            <i class="fas fa-hamburger"></i>
+          </div>
+        </div>
+        <ul
+          class="bg-white text-center md:text-left opacity-0 md:opacity-100 md:pointer-events-auto pointer-events-none md:block md:pt-3 py-6 md:py-0 absolute md:static w-full md:w-max transition-opacity shadow-xl md:shadow-none"
+          id="menu"
+        >
+          <li
+            class="font-semibold border-l-4 md:border-l-0 border-r-4 border-primary py-4 md:py-2"
+          >
+            <a href="#"
+              ><span>Home</span><i class="fas fa-home ml-2 px-1 mr-2"></i
+            ></a>
+          </li>
+          <li
+            class="font-light border-l-4 md:border-l-0 border-r-4 border-white py-4 md:py-2"
+          >
+            <a href="#"
+              ><span>About</span><i class="fas fa-info ml-4 px-1 mr-2"></i
+            ></a>
+          </li>
+          <li
+            class="font-light border-l-4 md:border-l-0 border-r-4 border-white py-4 md:py-2"
+          >
+            <a href="#"
+              ><span>Contact</span><i class="fas fa-phone ml-1 px-1 mr-2"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- content -->
+      <main class="px-2 sm:px-16 py-6 bg-gray-100 md:col-span-2">
+        <div class="text-primary flex justify-center md:justify-end">
+          <a
+            href="#"
+            class="btn md:border border-primary hover:bg-secondary-100 transition"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="ml-3 btn md:border border-primary hover:bg-secondary-100 transition"
+            >Sign up</a
+          >
+        </div>
+
+        <!-- hero -->
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-light">For Blahs</h3>
+        </header>
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+          Latest Recipes
+        </h4>
+
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- cards -->
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/stew.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Bean chilli stew</span
+              ><span class="block text-gray-400">Recipe by Mascos</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>25 min</span>
+            </div>
+          </div>
+
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/noodles.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Chilli Noodles</span
+              ><span class="block text-gray-400">Recipe by Toshibu</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>1 hour</span>
+            </div>
+          </div>
+
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/curry.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Tofu curry</span
+              ><span class="block text-gray-400">Recipe by Gringy</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>0.03 sec</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+          Most Popular
+        </h4>
+
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- cards -->
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/stew.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Bean chilli stew</span
+              ><span class="block text-gray-400">Recipe by Mascos</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>25 min</span>
+            </div>
+          </div>
+
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/noodles.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Chilli Noodles</span
+              ><span class="block text-gray-400">Recipe by Toshibu</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>1 hour</span>
+            </div>
+          </div>
+
+          <div
+            class="card hover:shadow-2xl transform hover:-translate-y-2 transition relative"
+          >
+            <img src="img/curry.jpg" alt="" class="card-img" />
+            <div class="p-4">
+              <span class="text-lg">Tofu curry</span
+              ><span class="block text-gray-400">Recipe by Gringy</span>
+            </div>
+            <div class="badge">
+              <i class="far fa-clock"></i>&nbsp;<span>0.03 sec</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-6">
+          <div class="bg-secondary-100 btn hover:shadow-inner transition">
+            Load more
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="nav.js"></script>
+  </body>
+</html>
